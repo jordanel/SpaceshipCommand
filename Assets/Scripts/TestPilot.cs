@@ -19,7 +19,7 @@ public class TestPilot : MonoBehaviour {
 			moveScript.destSpeed = 0;
 		}
 		if (Input.GetKeyDown("a")) {
-			moveScript.destRotSpeed = 5;
+			moveScript.destRotSpeed = 120;
 		} else if (Input.GetKeyUp("a")) {
 			moveScript.destRotSpeed = 0;
 		}
@@ -29,7 +29,7 @@ public class TestPilot : MonoBehaviour {
 			moveScript.destSpeed = 0;
 		}
 		if (Input.GetKeyDown("d")) {
-			moveScript.destRotSpeed = -5;
+			moveScript.destRotSpeed = -120;
 		} else if (Input.GetKeyUp("d")) {
 			moveScript.destRotSpeed = 0;
 		}
