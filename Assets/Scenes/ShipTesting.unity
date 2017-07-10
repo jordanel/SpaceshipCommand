@@ -191,6 +191,11 @@ Prefab:
       propertyPath: m_Name
       value: Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 50864994721358170, guid: 44daae266ff9f2143a860ae12b911cd1,
+        type: 2}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 44daae266ff9f2143a860ae12b911cd1, type: 2}
   m_IsPrefabParent: 0

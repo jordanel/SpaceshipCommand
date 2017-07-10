@@ -14,24 +14,28 @@ public class TestPilot : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKeyDown("w")) {
-			moveScript.destSpeed = 5;
+			moveScript.changeThrust(2, Vector2.up);
+			//moveScript.destSpeed = 5;
 		} else if(Input.GetKeyUp("w")) {
-			moveScript.destSpeed = 0;
+			//moveScript.destSpeed = 0;
+			moveScript.thrusting = false;
 		}
 		if (Input.GetKeyDown("a")) {
-			moveScript.destRotSpeed = 120;
+			moveScript.changeTurnSpd(90);
 		} else if (Input.GetKeyUp("a")) {
-			moveScript.destRotSpeed = 0;
+			moveScript.changeTurnSpd(0);
 		}
 		if (Input.GetKeyDown("s")) {
-			moveScript.destSpeed = -5;
+			moveScript.changeThrust(2, Vector2.down);
+			//moveScript.destSpeed = -5;
 		} else if (Input.GetKeyUp("s")) {
-			moveScript.destSpeed = 0;
+			//moveScript.destSpeed = 0;
+			moveScript.thrusting = false;
 		}
 		if (Input.GetKeyDown("d")) {
-			moveScript.destRotSpeed = -120;
+			moveScript.changeTurnSpd(-90);
 		} else if (Input.GetKeyUp("d")) {
-			moveScript.destRotSpeed = 0;
+			moveScript.changeTurnSpd(0);
 		}
 	}
 
