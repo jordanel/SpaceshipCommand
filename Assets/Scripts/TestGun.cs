@@ -13,11 +13,15 @@ public class TestGun : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey("q")) {
-			gunScript.destRot += 20 * Time.deltaTime;
+		if (Input.GetKeyDown("q")) {
+			gunScript.turn(true);
+		} else if (Input.GetKeyUp("q")) {
+			gunScript.stopTurn();
 		}
-		if (Input.GetKey("e")) {
-			gunScript.destRot -= 20 * Time.deltaTime;
+		if (Input.GetKeyDown("e")) {
+			gunScript.turn(false);
+		} else if (Input.GetKeyUp("e")) {
+			gunScript.stopTurn();
 		}
 	}
 }
