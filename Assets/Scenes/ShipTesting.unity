@@ -338,6 +338,8 @@ GameObject:
   - component: {fileID: 1416647277}
   - component: {fileID: 1416647276}
   - component: {fileID: 1416647278}
+  - component: {fileID: 1416647280}
+  - component: {fileID: 1416647279}
   m_Layer: 0
   m_Name: gunbarrel
   m_TagString: Gun
@@ -410,6 +412,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 329efb34742f2174998f3e8a0682febb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!233 &1416647279
+HingeJoint2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1416647275}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 2113459687}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: -0.00000011545899, y: -0.8306731}
+  m_ConnectedAnchor: {x: 0, y: -0.13}
+  m_UseMotor: 1
+  m_Motor:
+    m_MotorSpeed: 0
+    m_MaximumMotorForce: 50
+  m_UseLimits: 1
+  m_AngleLimits:
+    m_LowerAngle: -75
+    m_UpperAngle: 75
+--- !u!50 &1416647280
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1416647275}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2003441080
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,6 +555,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2113459686}
   - component: {fileID: 2113459685}
+  - component: {fileID: 2113459687}
   m_Layer: 0
   m_Name: gunbase
   m_TagString: Untagged
@@ -572,3 +618,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &2113459687
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2113459684}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
